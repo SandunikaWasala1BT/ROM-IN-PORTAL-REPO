@@ -81,7 +81,6 @@ namespace FunctionApp1
                      //{ "FitGapDataList", fitGapDataList },
                      //{ "IsvDataList", IsvDataList },
                      { "Executed On ",DateTime.UtcNow }
-
                 };
 
                 return new OkObjectResult(resultObject);
@@ -101,104 +100,104 @@ namespace FunctionApp1
             FetchXmlQueries fetchXmlQueries = new FetchXmlQueries
             {
                 parameterFetchXML = $@"
-<fetch mapping='logical'>
-  <entity name='seer_romparameters'>
-    <attribute name='seer_account' />
-    <attribute name='seer_changemanager' />
-    <attribute name='seer_changemanagertype' />
-    <attribute name='seer_changemanagertypename' />
-    <attribute name='seer_clouddeploymentmanagement' />
-    <attribute name='seer_clouddeploymentmanagementtype' />
-    <attribute name='seer_clouddeploymentmanagementtypename' />
-    <attribute name='seer_collaterequirements' />
-    <attribute name='seer_collaterequirementstype' />
-    <attribute name='seer_collaterequirementstypename' />
-    <attribute name='seer_conferenceroompilot' />
-    <attribute name='seer_conferenceroompilottype' />
-    <attribute name='seer_conferenceroompilottypename' />
-    <attribute name='seer_datamigration' />
-    <attribute name='seer_datamigrationtype' />
-    <attribute name='seer_datamigrationtypename' />
-    <attribute name='seer_deployprod' />
-    <attribute name='seer_deployprodtype' />
-    <attribute name='seer_deployprodtypename' />
-    <attribute name='seer_deployuat' />
-    <attribute name='seer_deployuattype' />
-    <attribute name='seer_deployuattypename' />
-    <attribute name='seer_designreview' />
-    <attribute name='seer_designreviewtype' />
-    <attribute name='seer_designreviewtypename' />
-    <attribute name='seer_endusertraining' />
-    <attribute name='seer_enablesnapshots' />
-    <attribute name='seer_endusertrainingusers' />
-    <attribute name='seer_formula' />
-    <attribute name='seer_hourlyrate' />
-    <attribute name='seer_hoursperday' />
-    <attribute name='seer_hypercaresupport' />
-    <attribute name='seer_postgolivesupporttype' />
-    <attribute name='seer_postgolivesupporttypename' />
-    <attribute name='seer_programmemanager' />
-    <attribute name='seer_programmemanagertype' />
-    <attribute name='seer_programmemanagertypename' />
-    <attribute name='seer_projectmanagement' />
-    <attribute name='seer_projectmanagementtype' />
-    <attribute name='seer_projectmanagementtypename' />
-    <attribute name='seer_projectsupport' />
-    <attribute name='seer_projectsupporttype' />
-    <attribute name='seer_projectsupporttypename' />
-    <attribute name='seer_reporting' />
-    <attribute name='seer_reportingtype' />
-    <attribute name='seer_reportingtypename' />
-    <attribute name='seer_romcomplexityhigh' />
-    <attribute name='seer_romcomplexitylow' />
-    <attribute name='seer_romcomplexitymedium' />
-    <attribute name='seer_romcomplexitynone' />
-    <attribute name='seer_solutionarchitect' />
-    <attribute name='seer_solutionarchitecttype' />
-    <attribute name='seer_solutionarchitecttypename' />
-    <attribute name='seer_supporthandover' />
-    <attribute name='seer_supporthandovertype' />
-    <attribute name='seer_supporthandovertypename' />
-    <attribute name='seer_technicalarchitect' />
-    <attribute name='seer_technicalarchitecttype' />
-    <attribute name='seer_technicalarchitecttypename' />
-    <attribute name='seer_testing' />
-    <attribute name='seer_testingtype' />
-    <attribute name='seer_testingtypename' />
-    <attribute name='seer_trainthetrainer' />
-    <attribute name='seer_trainthetrainertype' />
-    <attribute name='seer_trainthetrainertypename' />
-    <attribute name='seer_uatsupport' />
-    <attribute name='seer_uatsupporttype' />
-    <attribute name='seer_uatsupporttypename' />
-    <attribute name='seer_name' />
-    <attribute name='transactioncurrencyid' />
-    <attribute name='transactioncurrencyidname' />
-    <attribute name='seer_licencepricesheet' />
-    <attribute name='seer_documentlayoutstype' />
-    <attribute name='seer_documentlayouts' />
-    <attribute name='seer_upliftparameterset' />
-    <attribute name='seer_interfacecomplexityhigh' />
-    <attribute name='seer_interfacecomplexitylow' />
-    <attribute name='seer_interfacecomplexitymedium' />
-    <attribute name='seer_interfacecomplexityveryhigh' />
+                    <fetch mapping='logical'>
+                      <entity name='seer_romparameters'>
+                        <attribute name='seer_account' />
+                        <attribute name='seer_changemanager' />
+                        <attribute name='seer_changemanagertype' />
+                        <attribute name='seer_changemanagertypename' />
+                        <attribute name='seer_clouddeploymentmanagement' />
+                        <attribute name='seer_clouddeploymentmanagementtype' />
+                        <attribute name='seer_clouddeploymentmanagementtypename' />
+                        <attribute name='seer_collaterequirements' />
+                        <attribute name='seer_collaterequirementstype' />
+                        <attribute name='seer_collaterequirementstypename' />
+                        <attribute name='seer_conferenceroompilot' />
+                        <attribute name='seer_conferenceroompilottype' />
+                        <attribute name='seer_conferenceroompilottypename' />
+                        <attribute name='seer_datamigration' />
+                        <attribute name='seer_datamigrationtype' />
+                        <attribute name='seer_datamigrationtypename' />
+                        <attribute name='seer_deployprod' />
+                        <attribute name='seer_deployprodtype' />
+                        <attribute name='seer_deployprodtypename' />
+                        <attribute name='seer_deployuat' />
+                        <attribute name='seer_deployuattype' />
+                        <attribute name='seer_deployuattypename' />
+                        <attribute name='seer_designreview' />
+                        <attribute name='seer_designreviewtype' />
+                        <attribute name='seer_designreviewtypename' />
+                        <attribute name='seer_endusertraining' />
+                        <attribute name='seer_enablesnapshots' />
+                        <attribute name='seer_endusertrainingusers' />
+                        <attribute name='seer_formula' />
+                        <attribute name='seer_hourlyrate' />
+                        <attribute name='seer_hoursperday' />
+                        <attribute name='seer_hypercaresupport' />
+                        <attribute name='seer_postgolivesupporttype' />
+                        <attribute name='seer_postgolivesupporttypename' />
+                        <attribute name='seer_programmemanager' />
+                        <attribute name='seer_programmemanagertype' />
+                        <attribute name='seer_programmemanagertypename' />
+                        <attribute name='seer_projectmanagement' />
+                        <attribute name='seer_projectmanagementtype' />
+                        <attribute name='seer_projectmanagementtypename' />
+                        <attribute name='seer_projectsupport' />
+                        <attribute name='seer_projectsupporttype' />
+                        <attribute name='seer_projectsupporttypename' />
+                        <attribute name='seer_reporting' />
+                        <attribute name='seer_reportingtype' />
+                        <attribute name='seer_reportingtypename' />
+                        <attribute name='seer_romcomplexityhigh' />
+                        <attribute name='seer_romcomplexitylow' />
+                        <attribute name='seer_romcomplexitymedium' />
+                        <attribute name='seer_romcomplexitynone' />
+                        <attribute name='seer_solutionarchitect' />
+                        <attribute name='seer_solutionarchitecttype' />
+                        <attribute name='seer_solutionarchitecttypename' />
+                        <attribute name='seer_supporthandover' />
+                        <attribute name='seer_supporthandovertype' />
+                        <attribute name='seer_supporthandovertypename' />
+                        <attribute name='seer_technicalarchitect' />
+                        <attribute name='seer_technicalarchitecttype' />
+                        <attribute name='seer_technicalarchitecttypename' />
+                        <attribute name='seer_testing' />
+                        <attribute name='seer_testingtype' />
+                        <attribute name='seer_testingtypename' />
+                        <attribute name='seer_trainthetrainer' />
+                        <attribute name='seer_trainthetrainertype' />
+                        <attribute name='seer_trainthetrainertypename' />
+                        <attribute name='seer_uatsupport' />
+                        <attribute name='seer_uatsupporttype' />
+                        <attribute name='seer_uatsupporttypename' />
+                        <attribute name='seer_name' />
+                        <attribute name='transactioncurrencyid' />
+                        <attribute name='transactioncurrencyidname' />
+                        <attribute name='seer_licencepricesheet' />
+                        <attribute name='seer_documentlayoutstype' />
+                        <attribute name='seer_documentlayouts' />
+                        <attribute name='seer_upliftparameterset' />
+                        <attribute name='seer_interfacecomplexityhigh' />
+                        <attribute name='seer_interfacecomplexitylow' />
+                        <attribute name='seer_interfacecomplexitymedium' />
+                        <attribute name='seer_interfacecomplexityveryhigh' />
 
-    <link-entity name='account' from='seer_romparameters' to='seer_romparametersid' link-type='inner' alias='account'>
-      <attribute name='name' />
-      <filter>
-        <condition attribute='accountid' operator='eq' value='{accountid}' uitype='account' />
-      </filter>
-    </link-entity>
-    <link-entity name='transactioncurrency' from='transactioncurrencyid' to='transactioncurrencyid' alias='currency'>
-      <attribute name='currencysymbol' />
-      <attribute name='isocurrencycode' />
-    </link-entity>
-  </entity>
-</fetch>
-"
+                        <link-entity name='account' from='seer_romparameters' to='seer_romparametersid' link-type='inner' alias='account'>
+                          <attribute name='name' />
+                          <filter>
+                            <condition attribute='accountid' operator='eq' value='{accountid}' uitype='account' />
+                          </filter>
+                        </link-entity>
+                        <link-entity name='transactioncurrency' from='transactioncurrencyid' to='transactioncurrencyid' alias='currency'>
+                          <attribute name='currencysymbol' />
+                          <attribute name='isocurrencycode' />
+                        </link-entity>
+                      </entity>
+                    </fetch>
+                    "
             };
-            return fetchXmlQueries;
 
+            return fetchXmlQueries;
         }
 
         // Define a separate function for FetchXML query and data retrieval
@@ -389,48 +388,48 @@ namespace FunctionApp1
             FetchXmlQueries fetchXmlQueries = new FetchXmlQueries
             {
                 licencePriceSheetfetchXml = $@"<fetch>
-  <entity name='seer_licenceoutput'>
-    <attribute name='seer_licenceguideversion' />
-    <attribute name='seer_licenceoutputid' />
-    <attribute name='seer_calculationid' />
-    <attribute name='seer_source' />
-    <attribute name='seer_licencecount' />
-    <attribute name='seer_account' />
-    <attribute name='seer_name' />
-    <attribute name='seer_licencecalculatortype' />
-    <filter>
-      <!--<condition attribute='seer_account' operator='eq' value='adcf1813-7430-ee11-bdf3-000d3a0be042' uiname='Multi Company Test' uitype='account' />-->
-      <condition attribute='seer_account' operator='eq' value='{accountid}' uiname='ERP SMB v2.2' uitype='account' />
-    </filter>
-    <link-entity name='seer_microsoftlicence' from='seer_microsoftlicenceid' to='seer_microsoftlicence' link-type='inner' alias='microsoftlicense'>
-      <attribute name='seer_name' />
-      <attribute name='seer_billingperiod' />
-      <attribute name='seer_billingperiodname' />
-      <attribute name='seer_licencetype' />
-      <attribute name='seer_vendor' />
-      <link-entity name='seer_licencepricing' from='seer_licence' to='seer_microsoftlicenceid' link-type='inner' alias='licensepricing'>
-        <attribute name='seer_licencepriceid' />
-        <attribute name='seer_pricesheet' />
-        <attribute name='seer_cost' />
-        <attribute name='seer_licencepricingid' />
-        <attribute name='seer_sell' />
-        <attribute name='seer_licence' />
-        <attribute name='seer_account' />
-        <attribute name='seer_currency' />
-        <filter>
-          <!--<condition attribute='seer_currency' operator='eq' value='4171fc12-5ec6-eb11-8235-000d3ad5fbfe' uiname='British Pound' uitype='transactioncurrency' />-->
-          <condition attribute='seer_currency' operator='eq' value='{transactioncurrencyid}' uiname='British Pound' uitype='transactioncurrency' />
-        </filter>
-        <link-entity name='seer_licencepricesheet' from='seer_licencepricesheetid' to='seer_pricesheet' alias='pricesheet'>
-          <filter>
-            <!--<condition attribute='seer_licencepricesheetid' operator='eq' value='81888052-4ee3-ed11-8846-000d3a0be042' uiname='Seer BC 2' uitype='seer_licencepricesheet' />-->
-            <condition attribute='seer_licencepricesheetid' operator='eq' value='{licencepricesheet}' />
-          </filter>
-        </link-entity>
-      </link-entity>
-    </link-entity>
-  </entity>
-</fetch>"
+                      <entity name='seer_licenceoutput'>
+                        <attribute name='seer_licenceguideversion' />
+                        <attribute name='seer_licenceoutputid' />
+                        <attribute name='seer_calculationid' />
+                        <attribute name='seer_source' />
+                        <attribute name='seer_licencecount' />
+                        <attribute name='seer_account' />
+                        <attribute name='seer_name' />
+                        <attribute name='seer_licencecalculatortype' />
+                        <filter>
+                          <!--<condition attribute='seer_account' operator='eq' value='adcf1813-7430-ee11-bdf3-000d3a0be042' uiname='Multi Company Test' uitype='account' />-->
+                          <condition attribute='seer_account' operator='eq' value='{accountid}' uiname='ERP SMB v2.2' uitype='account' />
+                        </filter>
+                        <link-entity name='seer_microsoftlicence' from='seer_microsoftlicenceid' to='seer_microsoftlicence' link-type='inner' alias='microsoftlicense'>
+                          <attribute name='seer_name' />
+                          <attribute name='seer_billingperiod' />
+                          <attribute name='seer_billingperiodname' />
+                          <attribute name='seer_licencetype' />
+                          <attribute name='seer_vendor' />
+                          <link-entity name='seer_licencepricing' from='seer_licence' to='seer_microsoftlicenceid' link-type='inner' alias='licensepricing'>
+                            <attribute name='seer_licencepriceid' />
+                            <attribute name='seer_pricesheet' />
+                            <attribute name='seer_cost' />
+                            <attribute name='seer_licencepricingid' />
+                            <attribute name='seer_sell' />
+                            <attribute name='seer_licence' />
+                            <attribute name='seer_account' />
+                            <attribute name='seer_currency' />
+                            <filter>
+                              <!--<condition attribute='seer_currency' operator='eq' value='4171fc12-5ec6-eb11-8235-000d3ad5fbfe' uiname='British Pound' uitype='transactioncurrency' />-->
+                              <condition attribute='seer_currency' operator='eq' value='{transactioncurrencyid}' uiname='British Pound' uitype='transactioncurrency' />
+                            </filter>
+                            <link-entity name='seer_licencepricesheet' from='seer_licencepricesheetid' to='seer_pricesheet' alias='pricesheet'>
+                              <filter>
+                                <!--<condition attribute='seer_licencepricesheetid' operator='eq' value='81888052-4ee3-ed11-8846-000d3a0be042' uiname='Seer BC 2' uitype='seer_licencepricesheet' />-->
+                                <condition attribute='seer_licencepricesheetid' operator='eq' value='{licencepricesheet}' />
+                              </filter>
+                            </link-entity>
+                          </link-entity>
+                        </link-entity>
+                      </entity>
+                    </fetch>"
             };
             return fetchXmlQueries;
         }
@@ -440,25 +439,25 @@ namespace FunctionApp1
             FetchXmlQueries fetchXmlQueries = new FetchXmlQueries
             {
                 uplifttypefetchXml = $@"<fetch>
-  <entity name='seer_uplifttype'>
-    <attribute name='seer_appliesto' />
-    <attribute name='seer_appliestoname' />
-    <attribute name='seer_uplifttype' />
-    <attribute name='seer_uplifttypename' />
-    <order attribute='seer_uplifttype' />
-    <link-entity name='seer_upliftparameters' from='seer_uplifttype' to='seer_uplifttypeid' link-type='inner' alias='uplift_params'>
-      <attribute name='seer_upliftpercent' />
-      <attribute name='seer_upperlimit' />
-      <order attribute='seer_upperlimit' />
-      <link-entity name='seer_upliftparameterset' from='seer_upliftparametersetid' to='seer_upliftparameterset' link-type='inner' alias='uplift_param_set'>
-        <filter>
-          <!--<condition attribute='seer_upliftparametersetid' operator='eq' value='8e1d5608-455c-ee11-8def-002248015232' />-->
-          <condition attribute='seer_upliftparametersetid' operator='eq' value='{upliftparameterset}' />
-        </filter>
-      </link-entity>
-    </link-entity>
-  </entity>
-</fetch>"
+                      <entity name='seer_uplifttype'>
+                        <attribute name='seer_appliesto' />
+                        <attribute name='seer_appliestoname' />
+                        <attribute name='seer_uplifttype' />
+                        <attribute name='seer_uplifttypename' />
+                        <order attribute='seer_uplifttype' />
+                        <link-entity name='seer_upliftparameters' from='seer_uplifttype' to='seer_uplifttypeid' link-type='inner' alias='uplift_params'>
+                          <attribute name='seer_upliftpercent' />
+                          <attribute name='seer_upperlimit' />
+                          <order attribute='seer_upperlimit' />
+                          <link-entity name='seer_upliftparameterset' from='seer_upliftparametersetid' to='seer_upliftparameterset' link-type='inner' alias='uplift_param_set'>
+                            <filter>
+                              <!--<condition attribute='seer_upliftparametersetid' operator='eq' value='8e1d5608-455c-ee11-8def-002248015232' />-->
+                              <condition attribute='seer_upliftparametersetid' operator='eq' value='{upliftparameterset}' />
+                            </filter>
+                          </link-entity>
+                        </link-entity>
+                      </entity>
+                    </fetch>"
             };
             return fetchXmlQueries;
         }
