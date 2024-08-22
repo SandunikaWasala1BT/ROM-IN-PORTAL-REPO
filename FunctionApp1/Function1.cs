@@ -28,7 +28,6 @@ namespace FunctionApp1
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-
             // Create a Stopwatch instance to measure time
             Stopwatch stopwatch = new Stopwatch();
             try
