@@ -563,48 +563,48 @@ namespace FunctionApp1
             FetchXmlQueries fetchXmlQueries = new FetchXmlQueries
             {
                 licencePriceSheetfetchXml = $@"<fetch>
-                  <entity name='seer_licenceoutput'>
-                    <attribute name='seer_licenceguideversion' />
-                    <attribute name='seer_licenceoutputid' />
-                    <attribute name='seer_calculationid' />
-                    <attribute name='seer_source' />
-                    <attribute name='seer_licencecount' />
-                    <attribute name='seer_account' />
-                    <attribute name='seer_name' />
-                    <attribute name='seer_licencecalculatortype' />
-                    <filter>
-                      <!--<condition attribute='seer_account' operator='eq' value='adcf1813-7430-ee11-bdf3-000d3a0be042' uiname='Multi Company Test' uitype='account' />-->
-                      <condition attribute='seer_account' operator='eq' value='{accountid}' uiname='ERP SMB v2.2' uitype='account' />
-                    </filter>
-                    <link-entity name='seer_microsoftlicence' from='seer_microsoftlicenceid' to='seer_microsoftlicence' link-type='inner' alias='microsoftlicense'>
-                      <attribute name='seer_name' />
-                      <attribute name='seer_billingperiod' />
-                      <attribute name='seer_billingperiodname' />
-                      <attribute name='seer_licencetype' />
-                      <attribute name='seer_vendor' />
-                      <link-entity name='seer_licencepricing' from='seer_licence' to='seer_microsoftlicenceid' link-type='inner' alias='licensepricing'>
-                        <attribute name='seer_licencepriceid' />
-                        <attribute name='seer_pricesheet' />
-                        <attribute name='seer_cost' />
-                        <attribute name='seer_licencepricingid' />
-                        <attribute name='seer_sell' />
-                        <attribute name='seer_licence' />
+                      <entity name='seer_licenceoutput'>
+                        <attribute name='seer_licenceguideversion' />
+                        <attribute name='seer_licenceoutputid' />
+                        <attribute name='seer_calculationid' />
+                        <attribute name='seer_source' />
+                        <attribute name='seer_licencecount' />
                         <attribute name='seer_account' />
-                        <attribute name='seer_currency' />
+                        <attribute name='seer_name' />
+                        <attribute name='seer_licencecalculatortype' />
                         <filter>
-                          <!--<condition attribute='seer_currency' operator='eq' value='4171fc12-5ec6-eb11-8235-000d3ad5fbfe' uiname='British Pound' uitype='transactioncurrency' />-->
-                          <condition attribute='seer_currency' operator='eq' value='{transactioncurrencyid}' uiname='British Pound' uitype='transactioncurrency' />
+                          <!--<condition attribute='seer_account' operator='eq' value='adcf1813-7430-ee11-bdf3-000d3a0be042' uiname='Multi Company Test' uitype='account' />-->
+                          <condition attribute='seer_account' operator='eq' value='{accountid}' uiname='ERP SMB v2.2' uitype='account' />
                         </filter>
-                        <link-entity name='seer_licencepricesheet' from='seer_licencepricesheetid' to='seer_pricesheet' alias='pricesheet'>
-                          <filter>
-                            <!--<condition attribute='seer_licencepricesheetid' operator='eq' value='81888052-4ee3-ed11-8846-000d3a0be042' uiname='Seer BC 2' uitype='seer_licencepricesheet' />-->
-                            <condition attribute='seer_licencepricesheetid' operator='eq' value='{licencepricesheet}' />
-                          </filter>
+                        <link-entity name='seer_microsoftlicence' from='seer_microsoftlicenceid' to='seer_microsoftlicence' link-type='inner' alias='microsoftlicense'>
+                          <attribute name='seer_name' />
+                          <attribute name='seer_billingperiod' />
+                          <attribute name='seer_billingperiodname' />
+                          <attribute name='seer_licencetype' />
+                          <attribute name='seer_vendor' />
+                          <link-entity name='seer_licencepricing' from='seer_licence' to='seer_microsoftlicenceid' link-type='inner' alias='licensepricing'>
+                            <attribute name='seer_licencepriceid' />
+                            <attribute name='seer_pricesheet' />
+                            <attribute name='seer_cost' />
+                            <attribute name='seer_licencepricingid' />
+                            <attribute name='seer_sell' />
+                            <attribute name='seer_licence' />
+                            <attribute name='seer_account' />
+                            <attribute name='seer_currency' />
+                            <filter>
+                              <!--<condition attribute='seer_currency' operator='eq' value='4171fc12-5ec6-eb11-8235-000d3ad5fbfe' uiname='British Pound' uitype='transactioncurrency' />-->
+                              <condition attribute='seer_currency' operator='eq' value='{transactioncurrencyid}' uiname='British Pound' uitype='transactioncurrency' />
+                            </filter>
+                            <link-entity name='seer_licencepricesheet' from='seer_licencepricesheetid' to='seer_pricesheet' alias='pricesheet'>
+                              <filter>
+                                <!--<condition attribute='seer_licencepricesheetid' operator='eq' value='81888052-4ee3-ed11-8846-000d3a0be042' uiname='Seer BC 2' uitype='seer_licencepricesheet' />-->
+                                <condition attribute='seer_licencepricesheetid' operator='eq' value='{licencepricesheet}' />
+                              </filter>
+                            </link-entity>
+                          </link-entity>
                         </link-entity>
-                      </link-entity>
-                    </link-entity>
-                  </entity>
-                </fetch>"
+                      </entity>
+                    </fetch>"
             };
 
             return fetchXmlQueries;
